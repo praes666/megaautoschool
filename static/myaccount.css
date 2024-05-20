@@ -1,0 +1,112 @@
+.over-back {
+  margin: 0;
+  padding: 2rem;
+  background-color: white;
+}
+
+.over-text {
+  margin: auto;
+  display: flex;
+  width: 50%;
+  padding: 1rem;
+}
+
+.big-field {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0);
+  height: 10%;
+  width: 33%;
+  text-align: left;
+  padding: 1%;
+}
+
+.photo {
+  display: flex;
+  font-size: xx-large;
+}
+
+.large {
+  font-size: large !important;
+}
+
+.zxc {
+  font-size: xx-large !important;
+}
+
+.qwe {
+  margin-left: 1rem !important;
+  display: grid !important;
+  height: 3rem !important;
+  font-size: x-large;
+  width: 50rem !important;
+  text-align: left !important;
+}
+
+.left-field {
+  margin-left: 1.5%;
+  background-color: rgba(173, 216, 230, 0);
+  height: 10%;
+  width: 58.5%;
+  text-align: left;
+  padding: 1%;
+  min-height: 5rem;
+}
+
+.top {
+  display: flex;
+}
+
+.bot {
+  display: flex;
+}
+
+.small-field {
+  margin: auto;
+  background-color: rgba(173, 216, 230, 0);
+  height: 10%;
+  width: 20%;
+  text-align: left;
+  text-justify: 1rem;
+  padding: 1%;
+}
+
+.medium-text {
+  font-size: x-large !important;
+}
+
+.field-name {
+  background-color: lightblue;
+  padding: 0.5rem;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  height: 2rem;
+}
+
+.field-info {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  min-height: 3rem;
+}
+
+.text-large {
+  font-size: x-large;
+  margin: 0 !important;
+}
+
+.text-format {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.x {
+  margin-left: 2rem;
+  text-align: left !important;
+}
+
+.q {
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'myaccount.css'%}" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой аккаунт</title>
+  </head>
+  <body class="over-back">
+    {% if afterlogin != True %}
+    <a href="login/">вы не логин!</a>
+    {% else %}
+    <div class="over-text">
+      {% load static %} <img src="{%static "y.png"%}" alt="Логотип автошколы"
+      height="144" />
+      <p class="text-format medium-text x">
+        Здравствуйте, {{ student.name }}! <br />
+        Добро пожаловать бла бла бла
+      </p>
+    </div>
+    <div class="top">
+      <div class="small-field">
+        <div class="field-name">
+          <p class="text-format medium-text">Категория</p>
+        </div>
+        <div class="field-info">
+          <p class="text-format large">Категория {{student.category}}</p>
+        </div>
+      </div>
+      <div class="small-field">
+        <div class="field-name">
+          <p class="text-format medium-text">Учебная группа</p>
+        </div>
+        <div class="field-info">
+          <p class="text-format large">{{student.group}}</p>
+        </div>
+      </div>
+      <div class="small-field">
+        <div class="field-name">
+          <p class="text-format medium-text">Следующее занятие</p>
+        </div>
+        <div class="field-info">
+          <p class="text-format large">{{lessons.date|date:"d-m-Y"}}</p>
+          <p class="text-format large">{{lessons.time|date:"H:i"}}</p>
+        </div>
+      </div>
+      <div class="small-field">
+        <div class="field-name">
+          <p class="text-format medium-text">Осталось часов вождения</p>
+        </div>
+        <div class="field-info">
+          <p class="text-format large">{{student.drive_hours}} Часа(ов)</p>
+        </div>
+      </div>
+    </div>
+    <div class="bot">
+      <div class="left-field">
+        <div class="field-name">
+          <p class="text-format text-large zxc">Ваш инструктор</p>
+        </div>
+        <div class="field-info photo">
+          <img
+            class="q"
+            src="{{worker.photo.url}}"
+            alt="Нет фото"
+            height="144"
+            width="144"
+          />
+          <div class="qwe">
+            <p class="text-format qwe">
+              {{worker.name}} {{worker.otchestvo}} {{worker.surname}}
+            </p>
+            <p class="text-format large qwe">{{worker.number}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="big-field">
+        <div class="field-name">
+          <p class="text-format zxc text-large">Транспортное средство</p>
+        </div>
+        <div class="field-info photo">
+          <img
+            class="q"
+            src="{{auto.photo.url}}"
+            alt="Нет фото"
+            height="144"
+            width="144"
+          />
+          <div class="qwe">
+            <p class="text-format qwe">{{auto.brand}} {{auto.mark}}</p>
+            <p class="text-format large qwe">{{auto.car_number}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </body>
+</html>

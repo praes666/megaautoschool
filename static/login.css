@@ -1,0 +1,89 @@
+.back {
+  background-color: rgb(70, 70, 70);
+  margin: 0;
+}
+
+.mid {
+  margin: auto;
+  margin-top: 15rem;
+  width: 17%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.top-field {
+  background-color: grey;
+  margin-top: 10rem;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  padding: 0.5rem;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.zxc {
+  padding: 1%;
+  text-align: left !important;
+}
+
+.under-mid {
+  margin-top: 0;
+  background-color: rgb(200, 200, 200);
+  height: 13rem;
+  padding: 1rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.login_info {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1%;
+  width: 89%;
+  margin-bottom: 1%;
+  text-align: center;
+  border: 0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  margin: 0;
+}
+
+.ccc {
+  margin-left: 1rem;
+}
+
+.text {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  color: rgb(50, 50, 50);
+}
+
+.button {
+  border-radius: 0.5rem;
+  border: 0;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  display: block;
+  font-size: large;
+  background-color: rgb(170, 170, 170);
+}
+
+.button:active {
+  border-radius: 0.5rem;
+  border: 0;
+  margin-top: 1rem !important;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  display: block;
+  font-size: medium;
+  transform: scale(0.95);
+  background-color: rgb(100, 100, 100);
+}

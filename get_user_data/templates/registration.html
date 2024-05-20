@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'index.css'%}" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Запись в автошколу</title>
+  </head>
+  <body class="background">
+    <!-- <div class="navbar">
+      <p class="enter">
+        <a href="#">Войти</a>
+      </p>
+    </div> -->
+    <div class="big-mid-field">
+      <form method="post">
+        {% csrf_token %}
+        <div class="top-field">
+          <p class="text text-xlarge">Регестрация</p>
+        </div>
+        <div class="choosefield">
+          <p class="text-style text">Имя</p>
+          <input
+            class="reg-info"
+            placeholder="Имя"
+            type="text"
+            name="name"
+            required
+          />
+          <p class="text-style text">Фамилия</p>
+          <input
+            class="reg-info"
+            placeholder="Фамилия"
+            type="text"
+            name="surname"
+            required
+          />
+          <p class="text-style text">Телефон</p>
+          <input
+            class="reg-info"
+            placeholder="Телефон"
+            type="tel"
+            name="telephone"
+            required
+            min="10"
+          />
+
+          <p class="text-style text">Категория прав</p>
+          <select class="reg-info-second" name="category" required>
+            <option></option>
+            <option value="M">Категория M</option>
+            <option value="A">Категория A</option>
+            <option value="B">Категория B</option>
+            <option value="BE">Категория BE</option>
+            <option value="C">Категория C</option>
+            <option value="CE">Категория CE</option>
+            <option value="D">Категория D</option>
+          </select>
+          <button class="button">Зарегестрироваться</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
