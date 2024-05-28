@@ -1,3 +1,4 @@
 from django.contrib import admin
+from mypage import *
 
-# Register your models here.
+admin.site.register(models.profile)
