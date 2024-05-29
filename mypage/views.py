@@ -6,8 +6,8 @@ def login_check(request):
     login_error = "Неверный логин или пароль"
     if(request.method == 'POST'):
         if(profile.objects.filter(login=request.POST.get('login')).exists()):
-            if(profile.objects.filter(password=request.POST.get('password')).exists()):
-                profile_obj = profile.objects.get(login=request.POST.get('login'))
+            profile_obj = profile.objects.get(login=request.POST.get('login'))
+            if(request.POST.get('password') == profile_obj.password):
                 student_obj = profile_obj.student_id
                 worker_obj = student_obj.worker
                 auto_obj = worker_obj.car
